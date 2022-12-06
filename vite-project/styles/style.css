@@ -1,5 +1,27 @@
 @import url(variables.css);
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; /* Normally 100% is 16px, we want the size to be 10pz, so we do 62.5% */
+}
+
 #app {
   text-align: center;
+  font-size: 10rem;
   margin: auto;
+  margin-top: 40vw;
+}
+
+.animation {
+background-color: aqua;
+height: 90vh;
+}
+
+.header-animation {
+  background-color: aquamarine;
+  height: 10vh;
+  font-size: 5rem;
 }
