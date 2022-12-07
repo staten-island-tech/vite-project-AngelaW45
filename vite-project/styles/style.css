@@ -10,18 +10,61 @@ body,
 
 #app {
   text-align: center;
-  font-size: 10rem;
+  font-size: var(--app);
   margin: auto;
-  margin-top: 40vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 .animation {
-background-color: aqua;
+background-color: #00ffff;
 height: 90vh;
 }
 
 .header-animation {
-  background-color: aquamarine;
+  background-color: var(--green-aqua);
   height: 10vh;
   font-size: 5rem;
 }
+
+:root {
+  --green-aqua: #7ffff4d4;
+  --light-purple: #d49ef8;
+  --app: 3.375rem;
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+}
+
+h1 {
+font-size: var(--h1);
+}
+
+h2 {
+font-size: var(--h2);
+}
+
+h3 {
+font-size: var(--h3);
+}
+
+h4 {
+font-size: var(--h4);
+}
+
+h5 {
+font-size: var(--h5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  margin: auto;
+}
+
+

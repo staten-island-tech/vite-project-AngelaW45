@@ -9,4 +9,5 @@ document.querySelector("#app").innerHTML = `
   <h2>Hi!</h2>
   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
 `;
+
 console.log(menu);
