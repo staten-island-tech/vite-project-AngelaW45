@@ -2,7 +2,6 @@ const menu = [
   {
     name: "Pepperoni Pizza Slice",
     type: "Main course",
-    ingredients: "Dough, Cheese, Pepperoni",
     vegetarian: false,
     price: 2.0,
     img: "http",
@@ -11,7 +10,6 @@ const menu = [
   {
     name: "Whole Pepperoni Pizza",
     type: "Main course",
-    ingredients: "Dough, Cheese, Pepperoni",
     vegetarian: false,
     price: 10.5,
     img: "http",
@@ -20,16 +18,14 @@ const menu = [
   {
     name: "Burger",
     type: "Main course",
-    ingredients: "Bun, Cheese, Tomato, Onion, Ground-beef",
     vegetarian: false,
     price: 8.0,
-    img: "http",
+    img: "https://images.immediate.co.uk/production/volatile/sites/2/2015/04/2015-02-24-olive-test-d5b505c.jpg?quality=90&crop=7px,1865px,3278px,1410px&resize=556,505",
     instock: false,
   },
   {
     name: "Vegan Burger",
     type: "Main course",
-    ingredients: "Bun, Cheese, Tomato, Onion, Bean, Soybean, Tofu",
     vegetarian: true,
     price: 8.5,
     img: "http",
@@ -38,7 +34,6 @@ const menu = [
   {
     name: "Grilled Ribeye Steak",
     type: "Main course",
-    ingredients: "Meat from beef rib, Butter, Sauteed onions, Sauteed garlic",
     vegetarian: false,
     price: 30.0,
     img: "http",
@@ -47,7 +42,6 @@ const menu = [
   {
     name: "Grilled Pork Chop",
     type: "Main course",
-    ingredients: "Meat from loin, Butter, Sauteed onions, Sauteed garlic",
     vegetarian: false,
     price: 15.0,
     img: "http",
@@ -56,7 +50,6 @@ const menu = [
   {
     name: "French Fries",
     type: "Side dish",
-    ingredients: "Potato, Vegetable Oil, Salt",
     vegetarian: true,
     price: 7.0,
     img: "http",
@@ -65,7 +58,6 @@ const menu = [
   {
     name: "Chicken Wing",
     type: "Side dish",
-    ingredients: "Chicken Wing, Garlic, Pepper, Salt",
     vegetarian: false,
     price: 10.5,
     img: "http",
@@ -74,8 +66,6 @@ const menu = [
   {
     name: "Buffalo Chicken Wing",
     type: "Side dish",
-    ingredients:
-      "Chicken Wing, Garlic, Pepper, Salt, Flour, Melted-butter, Vinigar, Hot-sauce",
     vegetarian: false,
     price: 11.0,
     img: "http",
@@ -84,8 +74,6 @@ const menu = [
   {
     name: "Mashed Potato",
     type: "Side dish",
-    ingredients: "Potato, Butter, cream, milk, Salt.",
-    vegetarian: false,
     price: 7.0,
     img: "http",
     instock: false,
@@ -93,8 +81,6 @@ const menu = [
   {
     name: "Salad Caprese",
     type: "Side dish",
-    ingredients:
-      "Sliced mozzarella, Sliced tomatoes, Sweet basil, Olive oil, Salt.",
     vegetarian: true,
     price: 7.5,
     img: "http",
@@ -103,7 +89,6 @@ const menu = [
   {
     name: "Slice of Apple Pie",
     type: "dessert",
-    ingredients: "Apple, Flour, Milk, Sugar, Cinnamon, Butter, Salt",
     vegetarian: false,
     price: 8.0,
     img: "http",
@@ -112,7 +97,6 @@ const menu = [
   {
     name: "3 Different Ice Cream Scoops",
     type: "Side dish",
-    ingredients: "Milk, Sugar, sweetenrers",
     vegetarian: false,
     price: 10.0,
     img: "http",
