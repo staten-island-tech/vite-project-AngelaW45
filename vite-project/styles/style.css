@@ -17,7 +17,7 @@ body,
   background-color: var(--dark-blue);
 }
 
-.animation {
+.card-animation {
 background-color: var(--light-blue);
 height: 90vh;
 }
@@ -36,8 +36,8 @@ height: 90vh;
   --light-orange: #d38958;
   --dark-orange: #d16822;
 
---primary: var(var(--light-blue))
---secondary: var(var(--dark-blue))
+--primary: var(--light-blue);
+--secondary: var(--dark-blue);
 
   --app: 3.375rem;
   --h1: 7.594rem;
@@ -47,13 +47,28 @@ height: 90vh;
   --h5: 1.5rem;
 }
 
+.warm {
+  --primary: var(--light-orange);
+  --secondary: var(--dark-orange);
+}
+
+.cool {
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+}
+
+.hero {
+background-color: var(--primary);
+}
+
 .main {
+  background-color: var(--secondary);
   text-align: center;
   font-size: 5rem;
+  height: 90vh;
 }
 
 .btn {
-
 
 }
 
@@ -86,4 +101,14 @@ h5 {
   margin: auto;
 }
 
-
+.box {
+  width: 20vw;
+  height: 20vw;
+  padding: 20px 15px 20px 15px;
+  font-size: 4rem;
+  margin: 10rem auto;
+  background-color: rgb(168, 84, 216);
+  border-radius: 15px;
+  box-shadow: 15px 15px 5px rgb(116, 99, 114);
+  transition: all 0.3s;
+}

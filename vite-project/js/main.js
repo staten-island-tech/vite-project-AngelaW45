@@ -9,37 +9,38 @@ import { menu } from "./menu";
 document.querySelector("#app").innerHTML = `
   <h1>Angela's restaurant</h1>
   <h2>Hi!</h2>
-  <div class="main">
-  <button class="btn">Click me to change themes!</button>
-</div>
+
 `;
 console.log(menu);
 
 const DOMSelectors = {
-  parent: documentquerySelector("app"),
-  button: getelementbyclass("btn"),
+  parent: document.querySelector("app"),
+  button: document.getElementById("btn"),
 };
 
-function card {
+menu.forEach((food) => {
+  console.log(food.name);
+});
+
+function card() {
   DOMSelectors.displaySection.insertAdjacentHTML(
     "beforeend",
     `<div class="display-card">
-  <h2>name</h2>
-  <h3>type</h3>
-  <h3>vegetarian</h3>
-  <h3>rice</h3>
-  <h4>img</h2>
-  <h3>instock</h3>
+  <h2 class= "display-name"> ${name} </h2>
+  <h3 class= "display-type"> ${type} </h3>
+  <h3 class= "display-vegetarian"> ${vegetarian} </h3>
+  <h3 class= "display-price"> ${price} </h3>
+  <h4 class= "display-img"> ${img} </h2>
+  <h3 class= "display-stock"> ${instock} </h3>
   </div>`
   );
 }
-console.log(card)
+console.log(card);
 
-const product = {
-
+/* const product = {
 .filter((food) => food.type.includes("Main course"))
 .forEach((food) => {
-  console.log(food.name);
+  console.log(food.name)
 });
-}
-
+};
+ */
