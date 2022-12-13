@@ -9,33 +9,41 @@ import { menu } from "./menu";
 document.querySelector("#app").innerHTML = `
   <h1>Angela's restaurant</h1>
   <h2>Hi!</h2>
-
 `;
 console.log(menu);
 
 const DOMSelectors = {
   parent: document.querySelector("app"),
   button: document.getElementById("btn"),
+  displaySection: document.
 };
-
-menu.forEach((food) => {
-  console.log(food.name);
-});
+/* 
+function card() {
+  menu.forEach((food) => {
+    DOMSelectors.displaySection.insertAdjacentHTML();
+    console.log(food.name);
+  });
+}
+console.log(Menu) */
 
 function card() {
-  DOMSelectors.displaySection.insertAdjacentHTML(
-    "beforeend",
-    `<div class="display-card">
-  <h2 class= "display-name"> ${name} </h2>
-  <h3 class= "display-type"> ${type} </h3>
-  <h3 class= "display-vegetarian"> ${vegetarian} </h3>
-  <h3 class= "display-price"> ${price} </h3>
-  <h4 class= "display-img"> ${img} </h2>
-  <h3 class= "display-stock"> ${instock} </h3>
+  menu.forEach((food) => {
+    DOMSelectors.displaySection.insertAdjacentHTML(
+      "beforeend",
+      `<div class="display-card">
+  <h2 class= "display-name"> ${food.name} </h2>
+  <h3 class= "display-type"> ${food.type} </h3>
+  <h3 class= "display-vegetarian"> ${food.vegetarian} </h3>
+  <h3 class= "display-price"> ${food.price} </h3>
+  <h4 class= "display-img"> ${food.img} </h2>
+  <h3 class= "display-stock"> ${food.instock} </h3>
   </div>`
-  );
+    );
+  });
 }
 console.log(card);
+
+card();
 
 /* const product = {
 .filter((food) => food.type.includes("Main course"))
