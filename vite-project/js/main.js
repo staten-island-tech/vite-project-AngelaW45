@@ -7,24 +7,16 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 import { menu } from "./menu";
 document.querySelector("#app").innerHTML = `
-  <h1>Angela's restaurant</h1>
-  <h2>Hi!</h2>
+  <h1>Angela's restaurant!</h1>
+  <h2>Menu</h2>
 `;
 console.log(menu);
 
 const DOMSelectors = {
   parent: document.querySelector("app"),
   button: document.getElementById("btn"),
-  displaySection: document.
+  displaySection: document.getElementById("display"),
 };
-/* 
-function card() {
-  menu.forEach((food) => {
-    DOMSelectors.displaySection.insertAdjacentHTML();
-    console.log(food.name);
-  });
-}
-console.log(Menu) */
 
 function card() {
   menu.forEach((food) => {
@@ -41,8 +33,6 @@ function card() {
     );
   });
 }
-console.log(card);
-
 card();
 
 /* const product = {
