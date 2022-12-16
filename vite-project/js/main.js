@@ -27,7 +27,7 @@ function card() {
   <h3 class= "display-type"> ${food.type} </h3>
   <h3 class= "display-vegetarian"> ${food.vegetarian} </h3>
   <h3 class= "display-price"> ${food.price} </h3>
-  <h4 class= "display-img"> ${food.img} </h2>
+  <img src= "${food.img}"/> 
   <h3 class= "display-stock"> ${food.instock} </h3>
   </div>`
     );

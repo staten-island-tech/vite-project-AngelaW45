@@ -16,10 +16,41 @@ body,
   width: 100vw;
   background-color: var(--dark-blue);
 }
+.display-card {
+  width: 25vw;
+  height: 25vw;
+  padding: 20px 15px 20px 15px;
+  font-size: 4rem;
+  margin: 10rem auto;
+  background-color: rgb(168, 84, 216);
+  border-radius: 15px;
+  box-shadow: 15px 15px 5px rgb(116, 99, 114);
+  transition: all 0.3s;
+}
+
+.display-card:hover {
+  transform: scale(1.2);
+}
+
+.display-card:hover .display-card:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  transition: all 0.3s;
+}
 
 .card-animation {
 background-color: var(--light-blue);
-height: 90vh;
+/* height: 90vh; */
 }
 
 .header-animation {
@@ -71,39 +102,6 @@ background-color: var(--primary);
 .btn {
 
 }
-
-
-.display-card {
-  width: 25vw;
-  height: 25vw;
-  padding: 20px 15px 20px 15px;
-  font-size: 4rem;
-  margin: 10rem auto;
-  background-color: rgb(168, 84, 216);
-  border-radius: 15px;
-  box-shadow: 15px 15px 5px rgb(116, 99, 114);
-  transition: all 0.3s;
-}
-
-.display-card:hover {
-  transform: scale(1.2);
-}
-
-.display-card:not(:hover) {
-  /* transform: scale(0.8); */
-/*   opacity: 0.5; */
-}
-
-.parent2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: auto;
-  width: 80%;
-  transition: all 0.3s;
-}
-
 
 h1 {
 font-size: var(--h1);

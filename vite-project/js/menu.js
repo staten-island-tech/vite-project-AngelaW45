@@ -4,7 +4,7 @@ const menu = [
     type: "Main course",
     vegetarian: false,
     price: 2.0,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -12,7 +12,7 @@ const menu = [
     type: "Main course",
     vegetarian: false,
     price: 10.5,
-    img: "http",
+    img: "whole pizza.jpg",
     instock: true,
   },
   {
@@ -20,7 +20,7 @@ const menu = [
     type: "Main course",
     vegetarian: false,
     price: 8.0,
-    img: "https://images.immediate.co.uk/production/volatile/sites/2/2015/04/2015-02-24-olive-test-d5b505c.jpg?quality=90&crop=7px,1865px,3278px,1410px&resize=556,505",
+    img: "burger.jpg",
     instock: false,
   },
   {
@@ -28,7 +28,7 @@ const menu = [
     type: "Main course",
     vegetarian: true,
     price: 8.5,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -36,7 +36,7 @@ const menu = [
     type: "Main course",
     vegetarian: false,
     price: 30.0,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -44,7 +44,7 @@ const menu = [
     type: "Main course",
     vegetarian: false,
     price: 15.0,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -52,7 +52,7 @@ const menu = [
     type: "Side dish",
     vegetarian: true,
     price: 7.0,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -60,7 +60,7 @@ const menu = [
     type: "Side dish",
     vegetarian: false,
     price: 10.5,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -68,14 +68,14 @@ const menu = [
     type: "Side dish",
     vegetarian: false,
     price: 11.0,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
     name: "Mashed Potato",
     type: "Side dish",
     price: 7.0,
-    img: "http",
+    img: "",
     instock: false,
   },
   {
@@ -83,7 +83,7 @@ const menu = [
     type: "Side dish",
     vegetarian: true,
     price: 7.5,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -91,7 +91,7 @@ const menu = [
     type: "dessert",
     vegetarian: false,
     price: 8.0,
-    img: "http",
+    img: "",
     instock: true,
   },
   {
@@ -99,7 +99,7 @@ const menu = [
     type: "Side dish",
     vegetarian: false,
     price: 10.0,
-    img: "http",
+    img: "",
     instock: true,
   },
 ];
