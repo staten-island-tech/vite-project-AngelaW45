@@ -17,7 +17,7 @@ function card() {
   menu.forEach((food) => {
     DOMSelectors.displaySection.insertAdjacentHTML(
       "beforeend",
-      `<div class="display-card">
+      `<div class="display-card"data-aos="fade-down">
   <h2 class= "display-name"> ${food.name} </h2>
   <h3 class= "display-type"> ${food.type} </h3>
   <h3 class= "display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
