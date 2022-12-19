@@ -3,14 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 
-// D;
+document.query;
 AOS.init();
 import { menu } from "./menu";
-document.querySelector("#app").innerHTML = `
-  <h1>Angela's restaurant!</h1>
-  <h2>Menu</h2>
-`;
-console.log(menu);
 
 const DOMSelectors = {
   parent: document.querySelector("app"),
@@ -25,10 +20,10 @@ function card() {
       `<div class="display-card">
   <h2 class= "display-name"> ${food.name} </h2>
   <h3 class= "display-type"> ${food.type} </h3>
-  <h3 class= "display-vegetarian"> ${food.vegetarian} </h3>
-  <h3 class= "display-price"> ${food.price} </h3>
-  <img src= "${food.img}"/> 
-  <h3 class= "display-stock"> ${food.instock} </h3>
+  <h3 class= "display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
+  <h3 class= "display-price"> Price: ${food.price} $ </h3>
+  <img class= "image" src= "${food.img}"/> 
+  <h3 class= "display-stock"> In Stock: ${food.instock} </h3>
   </div>`
     );
   });
