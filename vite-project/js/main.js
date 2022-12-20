@@ -35,17 +35,18 @@ function card() {
       `<div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-        <h3 class="display-name"> ${food.name} </h3>
-        <h4 class="display-type"> ${food.type} </h4>
-        <img class="image" src="${food.img}" />
+          <h3 class="display-name"> ${food.name} </h3>
+            <h4 class="display-type"> ${food.type} </h4>
+            <img class="image" src="${food.img}" />
         </div>
         <div class="flip-card-back">
-        <h3 class="display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
-        <h3 class="display-price"> Price: ${food.price} $ </h3>
-        <h3 class="display-stock"> In Stock: ${food.instock} </h3>
+          <h3 class="display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
+            <h3 class="display-price"> Price: ${food.price} $ </h3>
+            <h3 class="display-stock"> In Stock: ${food.instock} </h3>
         </div>
+      </div>
+    </div>
 
-        
       </div>
     </div>`
     );
@@ -63,11 +64,3 @@ card();
     <h3 class="display-price"> Price: ${food.price} $ </h3>
     <h3 class="display-stock"> In Stock: ${food.instock} </h3>
     */
-
-/* const product = {
-.filter((food) => food.type.includes("Main course"))
-.forEach((food) => {
-  console.log(food.name)
-});
-};
- */
