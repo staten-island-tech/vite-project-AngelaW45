@@ -17,18 +17,26 @@ function card() {
   menu.forEach((food) => {
     DOMSelectors.displaySection.insertAdjacentHTML(
       "beforeend",
-      `<div class="display-card"data-aos="fade-down">
-  <h2 class= "display-name"> ${food.name} </h2>
-  <h3 class= "display-type"> ${food.type} </h3>
-  <h3 class= "display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
-  <h3 class= "display-price"> Price: ${food.price} $ </h3>
+      `<div class="display-card" data-aos="flip-up">
+  <h3 class= "display-name"> ${food.name} </h3>
+  <h4 class= "display-type"> ${food.type} </h4>
   <img class= "image" src= "${food.img}"/> 
-  <h3 class= "display-stock"> In Stock: ${food.instock} </h3>
   </div>`
     );
   });
 }
 card();
+
+{
+  /* <h3 class= "display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
+  <h3 class= "display-price"> Price: ${food.price} $ </h3>
+  <h3 class= "display-stock"> In Stock: ${food.instock} </h3> */
+}
+
+/* <h3 class="display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
+    <h3 class="display-price"> Price: ${food.price} $ </h3>
+    <h3 class="display-stock"> In Stock: ${food.instock} </h3>
+    </div>` */
 
 /* const product = {
 .filter((food) => food.type.includes("Main course"))

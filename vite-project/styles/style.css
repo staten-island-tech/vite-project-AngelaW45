@@ -2,38 +2,39 @@
 html,
 body,
 * {
+  text-align: center;
   padding: 0;
-  margin: 0;
+  margin: auto;
   box-sizing: border-box;
   font-size: 62.5%; /* Normally 100% is 16px, we want the size to be 10pz, so we do 62.5% */
 }
 
 #app {
-  text-align: center;
   font-size: var(--app);
   padding-top: 5vh;
   width: 100vw;
   background-color: var(--dark-blue);
 }
 
-.display-card {
-  width: 25vw;
-  height: 25vw;
-  padding: 5px 10px 5px 10px;
-  font-size: 4rem;
-  margin: 10rem auto;
-  background-color: var(--light-blue);
-  border-radius: 15px;
-  box-shadow: 15px 15px 5px rgb(116, 99, 114);
-  transition: all 0.3s;
-}
-
 .display-card:hover {
+  /* data-aos="flip-up" */
   transform: scale(1.2);
 }
 
 .display-card:not(:hover) {
   transform: scale(0.9);
+}
+
+.display-card {
+  width: 25vw;
+  height: 28vw;
+  padding: 30px;
+  font-size: 4rem;
+  margin: 5rem auto;
+  background-color: var(--light-blue);
+  border-radius: 15px;
+  box-shadow: 15px 15px 5px rgb(116, 99, 114);
+  transition: all 0.3s;
 }
 
 .display {
@@ -49,7 +50,6 @@ body,
 
 .card-animation {
   background-color: var(--dark-blue);
-  /* height: 90vh; */
 }
 
 .header-animation {
@@ -58,9 +58,18 @@ body,
   font-size: 5rem;
 }
 
+.menu {
+  padding-top: 8rem;
+}
+
+.display-type {
+  padding-top: 1rem;
+}
+
 .image {
-  margin: auto;
-  width: 23vw;
+  width: 18vw;
+  margin-top: 1.5rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
 }
 
 :root {
@@ -133,8 +142,4 @@ h4,
 h5 {
   text-align: center;
   margin: auto;
-}
-
-h2 {
-  margin-top: 10rem;
 }

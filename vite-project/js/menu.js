@@ -36,7 +36,7 @@ const menu = [
     type: "Main course",
     vegetarian: false,
     price: 30.0,
-    img: "/Grilled Ribeye Steak.jpg",
+    img: "/Grilled steak.jpg",
     instock: true,
   },
   {
