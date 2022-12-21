@@ -13,7 +13,7 @@ body,
   font-size: var(--app);
   padding-top: 5vh;
   width: 100vw;
-  background-color: var(--dark-blue);
+  background-color: var(--secondary);
 }
 
 /*  .display-card:hover {
@@ -30,7 +30,7 @@ body,
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 5rem auto;
   width: 90%;
   transition: all 0.3s;
 }
@@ -48,14 +48,11 @@ body,
 } */
 
 .flip-card {
-  width: 20vw;
-  height: 27vw;
-  padding: 30px;
-
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 350px;
   perspective: 1000px;
+  margin: 5rem auto;
 }
 
 .flip-card-inner {
@@ -79,7 +76,7 @@ body,
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: var(--light-blue);
+  background-color: var(--primary);
 }
 
 .flip-card-front {
@@ -94,7 +91,7 @@ body,
 }
 
 .card-animation {
-  background-color: var(--dark-blue);
+  background-color: var(--secondary);
   padding-top: 5rem;
 }
 
@@ -147,7 +144,7 @@ body,
   --secondary: var(--dark-blue);
 }
 
-.hero {
+/* .hero {
   background-color: var(--primary);
 }
 
@@ -156,9 +153,13 @@ body,
   text-align: center;
   font-size: 5rem;
   height: 90vh;
-}
+} */
 
-.btn {
+.wbtn,
+.cbtn {
+  border-radius: 2rem;
+  padding: 5px;
+  margin: 3rem;
 }
 
 h1 {

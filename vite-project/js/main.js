@@ -13,21 +13,6 @@ const DOMSelectors = {
   displaySection: document.getElementById("display"),
 };
 
-/* 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>John Doe</h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
- */
-
 function card() {
   menu.forEach((food) => {
     DOMSelectors.displaySection.insertAdjacentHTML(
@@ -45,22 +30,27 @@ function card() {
             <h3 class="display-stock"> In Stock: ${food.instock} </h3>
         </div>
       </div>
-    </div>
-
-      </div>
     </div>`
     );
   });
 }
 card();
 
-{
-  /* <h3 class="display-name"> ${food.name} </h3>
-              <h4 class="display-type"> ${food.type} </h4>
-              <img class="image" src="${food.img}" />*/
-}
+document.querySelector(".wbtn").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  }
+});
 
-/* <h3 class="display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
-    <h3 class="display-price"> Price: ${food.price} $ </h3>
-    <h3 class="display-stock"> In Stock: ${food.instock} </h3>
-    */
+document.querySelector(".cbtn").addEventListener("click", function () {
+  if (document.body.classList.contains("warm")) {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
+
+/* else {
+  document.body.classList.add("cool");
+  document.body.classList.remove("warm");
+} */
