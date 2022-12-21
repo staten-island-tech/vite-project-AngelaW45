@@ -1,7 +1,7 @@
 const menu = [
   {
     name: "Pepperoni Pizza Slice",
-    type: "Main course",
+    type: "Main Course",
     vegetarian: false,
     price: 2.0,
     img: "/Pizza-slice.jpg",
@@ -9,7 +9,7 @@ const menu = [
   },
   {
     name: "Whole Pepperoni Pizza",
-    type: "Main course",
+    type: "Main Course",
     vegetarian: false,
     price: 10.5,
     img: "/whole pizza.jpg",
@@ -17,7 +17,7 @@ const menu = [
   },
   {
     name: "Burger",
-    type: "Main course",
+    type: "Main Course",
     vegetarian: false,
     price: 8.0,
     img: "/burger.jpg",
@@ -25,7 +25,7 @@ const menu = [
   },
   {
     name: "Vegan Burger",
-    type: "Main course",
+    type: "Main Course",
     vegetarian: true,
     price: 8.5,
     img: "/Vegan Burger.jpg",
@@ -33,7 +33,7 @@ const menu = [
   },
   {
     name: "Grilled Ribeye Steak",
-    type: "Main course",
+    type: "Main Course",
     vegetarian: false,
     price: 30.0,
     img: "/Grilled steak.jpg",
@@ -41,7 +41,7 @@ const menu = [
   },
   {
     name: "Grilled Pork Chop",
-    type: "Main course",
+    type: "Main Course",
     vegetarian: false,
     price: 15.0,
     img: "/Grilled Pork Chop.jpg",
@@ -74,13 +74,14 @@ const menu = [
   {
     name: "Mashed Potato",
     type: "Appetizer",
+    vegetarian: false,
     price: 7.0,
     img: "/Mashed Potato.jpg",
     instock: false,
   },
   {
     name: "Salad Caprese",
-    type: "Side dish",
+    type: "Appetizer",
     vegetarian: true,
     price: 7.5,
     img: "/Salad Caprese.jpg",

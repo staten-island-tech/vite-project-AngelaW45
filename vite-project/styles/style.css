@@ -49,8 +49,8 @@ body,
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 350px;
+  width: 45rem;
+  height: 45rem;
   perspective: 1000px;
   margin: 5rem auto;
 }
@@ -82,12 +82,14 @@ body,
 .flip-card-front {
   color: black;
   border-radius: 15px;
+  padding-top: 3vh;
 }
 
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
   border-radius: 15px;
+  padding-top: 2vh;
 }
 
 .card-animation {
@@ -110,10 +112,17 @@ body,
 }
 
 .image {
-  width: 18vw;
-  margin-top: 1.5rem;
-  padding: 1.5rem 1rem 1.5rem 1rem;
+  width: 16vw;
+  margin-top: 1.5rem ;
+  padding: 1.5rem ;
 }
+
+.image-back{
+  width: 15vw;
+  margin-top: 1.5rem ;
+  padding: 1.5rem ;
+}
+
 
 :root {
   --grey: #2b2b2c;
@@ -144,22 +153,18 @@ body,
   --secondary: var(--dark-blue);
 }
 
-/* .hero {
-  background-color: var(--primary);
-}
-
-.main {
-  background-color: var(--secondary);
-  text-align: center;
-  font-size: 5rem;
-  height: 90vh;
-} */
-
 .wbtn,
-.cbtn {
+.cbtn,
+.vbtn,
+.mbtn,
+.abtn,
+.dbtn,
+.ibtn,
+.rbtn {
   border-radius: 2rem;
-  padding: 5px;
-  margin: 3rem;
+  padding: 5px 12px;
+  margin: 5rem;
+  background-color: var(--primary);
 }
 
 h1 {

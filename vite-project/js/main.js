@@ -25,9 +25,10 @@ function card() {
             <img class="image" src="${food.img}" />
         </div>
         <div class="flip-card-back">
+          <img class="image-back" src="${food.img}" />
           <h3 class="display-vegetarian"> Vegetarian: ${food.vegetarian} </h3>
             <h3 class="display-price"> Price: ${food.price} $ </h3>
-            <h3 class="display-stock"> In Stock: ${food.instock} </h3>
+            <h4 class="display-stock"> In Stock: ${food.instock} </h3>
         </div>
       </div>
     </div>`
@@ -48,6 +49,21 @@ document.querySelector(".cbtn").addEventListener("click", function () {
     document.body.classList.add("cool");
     document.body.classList.remove("warm");
   }
+});
+
+/* 
+.vbtn,
+.mbtn,
+.abtn,
+.dbtn,
+.ibtn */
+
+document.querySelector(".vbtn").addEventListener("click", function (event) {
+  menu
+    .filter((food) => food.vegetarian === true)
+    .forEach((food) => {
+      console.log(food.name, food.vegetarian);
+    });
 });
 
 /* else {
