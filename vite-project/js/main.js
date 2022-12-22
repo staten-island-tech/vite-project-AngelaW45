@@ -9,15 +9,21 @@ import { menu } from "./menu";
 
 const DOMSelectors = {
   parent: document.querySelector("app"),
-  button: document.getElementById("btn"),
   displaySection: document.getElementById("display"),
+  vegetarianBtn: document.getElementsByClassName("vbtn"),
+  MainCourseBtn: document.getElementsByClassName("mbtn"),
+  AppetizerBtn: document.getElementsByClassName("abtn"),
+  DessertBtn: document.getElementsByClassName("dbtn"),
+  InStockBtn: document.getElementsByClassName("ibtn"),
+  ResetBtn: document.getElementsByClassName("rbtn"),
+  WarmBtn: document.getElementsByClassName("wbtn"),
+  CoolBtn: document.getElementsByClassName("cbtn"),
 };
 
-function card() {
-  menu.forEach((food) => {
-    DOMSelectors.displaySection.insertAdjacentHTML(
-      "beforeend",
-      `<div class="flip-card">
+function card(food) {
+  DOMSelectors.displaySection.insertAdjacentHTML(
+    "beforeend",
+    `<div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <h3 class="display-name"> ${food.name} </h3>
@@ -32,10 +38,40 @@ function card() {
         </div>
       </div>
     </div>`
-    );
+  );
+}
+
+function all() {
+  menu.forEach((food) => {
+    card(food);
   });
 }
-card();
+all();
+
+function OnlyVegetarian() {
+  DOMSelectors.displaySection.innerHTML = " ";
+  menu
+    .filter((food) => food.vegetarian === true)
+    .forEach((food) => {
+      card(food);
+    });
+}
+
+DOMSelectors.vegetarianBtn.addEventListener("click", function () {
+  OnlyVegetarian();
+});
+
+/* DOMSelectors.document
+  .querySelector(".vbtn")
+  .addEventListener("click", function OnlyVegetarian() {
+    DOMSelectors.displaySection.innerHTML = "";
+
+    menu
+      .filter((food) => food.vegetarian === true)
+      .forEach((food) => {
+        DOMSelectors.displaySection.insertAdjacentHTML(
+          menu.forEach((food) => {
+            */
 
 document.querySelector(".wbtn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
@@ -51,22 +87,8 @@ document.querySelector(".cbtn").addEventListener("click", function () {
   }
 });
 
-/* 
-.vbtn,
-.mbtn,
-.abtn,
-.dbtn,
-.ibtn */
-
-document.querySelector(".vbtn").addEventListener("click", function (event) {
-  menu
-    .filter((food) => food.vegetarian === true)
-    .forEach((food) => {
-      console.log(food.name, food.vegetarian);
-    });
-});
-
 /* else {
   document.body.classList.add("cool");
   document.body.classList.remove("warm");
-} */
+}
+ */
