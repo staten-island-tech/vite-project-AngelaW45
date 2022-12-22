@@ -16,36 +16,17 @@ body,
   background-color: var(--secondary);
 }
 
-/*  .display-card:hover {
-  transform: scale(1.2);
-}
-
-.display-card:not(:hover) {
-  transform: scale(0.9);
-} */
-
 .display {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5rem auto;
+  margin: auto;
+
   width: 90%;
   transition: all 0.3s;
 }
-
-/* .display-card {
-  width: 10vw;
-  height: 27vw;
-  padding: 30px;
-  font-size: 4rem;
-  margin: 5rem auto;
-  background-color: var(--light-blue);
-  border-radius: 15px;
-  box-shadow: 15px 15px 5px rgb(116, 99, 114);
-  transition: all 0.3s;
-} */
 
 .flip-card {
   background-color: transparent;
@@ -165,6 +146,7 @@ body,
   padding: 5px 12px;
   margin: 5rem;
   background-color: var(--primary);
+  font-family: "Noto Serif Georgian", serif;
 }
 
 h1 {
@@ -194,4 +176,7 @@ h4,
 h5 {
   text-align: center;
   margin: auto;
+  font-family: "Noto Serif Georgian", serif;
 }
+
+

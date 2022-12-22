@@ -10,14 +10,14 @@ import { menu } from "./menu";
 const DOMSelectors = {
   parent: document.querySelector("app"),
   displaySection: document.getElementById("display"),
-  vegetarianBtn: document.getElementsByClassName("vbtn"),
-  MainCourseBtn: document.getElementsByClassName("mbtn"),
-  AppetizerBtn: document.getElementsByClassName("abtn"),
-  DessertBtn: document.getElementsByClassName("dbtn"),
-  InStockBtn: document.getElementsByClassName("ibtn"),
-  ResetBtn: document.getElementsByClassName("rbtn"),
-  WarmBtn: document.getElementsByClassName("wbtn"),
-  CoolBtn: document.getElementsByClassName("cbtn"),
+  vegetarianBtn: document.querySelector(".vbtn"),
+  MainCourseBtn: document.querySelector(".mbtn"),
+  AppetizerBtn: document.querySelector(".abtn"),
+  DessertBtn: document.querySelector(".dbtn"),
+  InStockBtn: document.querySelector(".ibtn"),
+  ResetBtn: document.querySelector(".rbtn"),
+  WarmBtn: document.getElementsByClassName(".wbtn"),
+  CoolBtn: document.getElementsByClassName(".cbtn"),
 };
 
 function card(food) {
@@ -47,7 +47,6 @@ function all() {
   });
 }
 all();
-
 function OnlyVegetarian() {
   DOMSelectors.displaySection.innerHTML = " ";
   menu
@@ -56,9 +55,60 @@ function OnlyVegetarian() {
       card(food);
     });
 }
+function OnlyMainCourse() {
+  DOMSelectors.displaySection.innerHTML = " ";
+  menu
+    .filter((food) => food.type === "Main Course")
+    .forEach((food) => {
+      card(food);
+    });
+}
+function OnlyAppetizer() {
+  DOMSelectors.displaySection.innerHTML = " ";
+  menu
+    .filter((food) => food.type === "Appetizer")
+    .forEach((food) => {
+      card(food);
+    });
+}
+function OnlyInStock() {
+  DOMSelectors.displaySection.innerHTML = " ";
+  menu
+    .filter((food) => food.instock === true)
+    .forEach((food) => {
+      card(food);
+    });
+}
+function OnlyDessert() {
+  DOMSelectors.displaySection.innerHTML = " ";
+  menu
+    .filter((food) => food.type === "Dessert")
+    .forEach((food) => {
+      card(food);
+    });
+}
+function Reset() {
+  DOMSelectors.displaySection.innerHTML = " ";
+  all();
+}
 
 DOMSelectors.vegetarianBtn.addEventListener("click", function () {
   OnlyVegetarian();
+});
+DOMSelectors.MainCourseBtn.addEventListener("click", function () {
+  OnlyMainCourse();
+});
+DOMSelectors.AppetizerBtn.addEventListener("click", function () {
+  OnlyAppetizer();
+});
+DOMSelectors.DessertBtn.addEventListener("click", function () {
+  OnlyDessert();
+});
+DOMSelectors.InStockBtn.addEventListener("click", function () {
+  OnlyInStock();
+});
+DOMSelectors.ResetBtn.addEventListener("click", function () {
+  Reset();
 });
 
 /* DOMSelectors.document
@@ -86,9 +136,3 @@ document.querySelector(".cbtn").addEventListener("click", function () {
     document.body.classList.remove("warm");
   }
 });
-
-/* else {
-  document.body.classList.add("cool");
-  document.body.classList.remove("warm");
-}
- */
