@@ -47,6 +47,7 @@ function all() {
   });
 }
 all();
+
 function OnlyVegetarian() {
   DOMSelectors.displaySection.innerHTML = " ";
   menu
